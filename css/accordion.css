@@ -1,0 +1,53 @@
+html{font-size:62.5%;/*10 ÷ 16 × 100% = 62.5%*/font: normal "新細明體",Arial,sans-serif; }
+
+a {
+text-decoration: none;
+color: #565656;
+}
+.clear{clear:both;}
+.promoRight{ position:absolute; top:194px; left:810px;width: 182px; height: 496px; background: #fff; }
+#rank{}
+#rank ul.nav{ background:#efefef; padding:5px 5px 0 5px; width:173px; border-bottom: 1px solid #d9d9d9;}
+#rank ul.nav li{ float:left; font-size:1.3rem; font-weight:bold;}
+#rank ul.nav li a{ float:left; text-align:center; padding:5px; width:74px; border:1px solid #efefef; margin-bottom:-10px;}
+#rank ul.nav li a:last-child{ margin:0;}
+#rank ul.nav li a.current{ background:#FFFFFF; border:1px solid #d6d6d6; border-bottom:1px solid #fff; color:#da016c;}
+
+.accordion{ font-size:1.2rem; width:182px; height:462px; border-right: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9;}
+	.accordion li{ 	
+					padding:5px 8px; 
+					height:53px; width:166px; 
+					overflow:hidden; 
+					display:block; 
+					/* CSS3 Transition Effect */
+					border-bottom:1px dotted #c2c2c2;
+					transition: height 0.3s ease-in-out;
+					-moz-transition: height 0.3s ease-in-out;
+					-webkit-transition: height 0.3s ease-in-out;
+					-o-transition: height 0.3s ease-in-out;
+					 background: #fff;
+				}
+				.accordion li:last-child{ border:none;}
+	.accordion li:hover{ width:166px; height:195px; overflow:hidden; text-decoration:none; color:#990000;}
+	
+	.accordion h4{ font-size:1.2rem; line-height:130%; width:105px; float:left; height:32px; overflow:hidden;}
+	.accordion li:hover h4{ color:#990000; width:100%; margin-top:5px;}
+		
+	.accordion a{ display:block; width:168x; text-decoration:none; color:#5d5d5d;}
+		.accordion li:hover a{ width:174px; text-decoration:none; color:#5d5d5d; height:60px;}
+	.accordion li img{ width:53px; height:53px; float:left; float:left; margin-right:8px; }
+	.accordion li:hover img{ width:142px; height:142px; display:block; float:right; margin-right:20px;}
+	
+	.accordion .price{ width:105px; float:left; font-size:1.2rem; color:#999; margin-top:3px;}
+		.accordion .price span{ color:#BF0200;}
+		.accordion .price b{ font-family:Arial, Helvetica, sans-serif, "新細明體"; font-size:1.7rem;}
+		.accordion li:hover .price{ color:#990000; margin:0;}
+	.accordion .cnt{ display:none;}
+	
+	.accordion li.current{ height:195px;}
+		.accordion li.current h4{ color:#990000; width:100%; margin-top:5px;}
+		.accordion li:hover.current h4{ color:#990000; width:170px; margin-top:5px;}
+		.accordion li.current img{ width:142px; height:142px; display:block; float:right; margin-right:14px;}
+		.accordion li.current .price{ color:#990000; margin:0;}
+		.accordion li:hover.current .price{ color:#990000; margin:0;}
+		.accordion li:hover.current img{ margin-right:22px;}

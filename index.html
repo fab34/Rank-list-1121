@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link href="css/reset.css" type="text/css"; rel="stylesheet" />
+<link href="css/accordion2.css" type="text/css"; rel="stylesheet" />
+<link href="css/demostyles.css" type="text/css"; rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#tab1>a").addClass('current');
+		$("#tab2").mouseover(function(){
+			$("#tab2>a,#tab1>a").removeClass('current');
+			$("#tab2>a").addClass('current');
+			});
+		$("#tab1").mouseover(function(){
+			$("#tab2>a,#tab1>a").removeClass('current');
+			$("#tab1>a").addClass('current');
+			});
+			
+		$("#accordionArea li").mouseover(function(){
+			$("#accordionArea li").removeClass('current');
+			this.addClass('current');
+			});
+		$("#accordionArea li").mouseout(function(){
+			$("li.deful").addClass('current');
+			});
+			
+		});
+</script>
+</head>
+
+<body>
+<div id="demoWrapper">
+  <div class="promoRight">
+      <div id="rank">
+        <ul class="nav">
+          <li id="tab1">
+          	<a href="web.html">網路TOP 5</a>
+            <div id="accordionArea">
+            	<ul id="accordionWeb" class="accordion">
+                	<li class="current deful">
+                    	<a href="web.html" target="_top">
+                        	<span class="lab"><strong>1</strong></span>
+                        	<img src="images/thumbnail-1.jpg" />
+                        	<h4>義世經典托斯坎尼南北義十日(無自費)斯坎尼南北義十日</h4>
+                        	<p class="price"><span>$<b>2680</b></span></p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="web.html" target="_top">
+                        	<span class="lab"><strong>2</strong></span>
+                        	<img src="images/thumbnail-2.jpg" />
+                            <h4>【Chloe’】香水女王經典女香75ml珍藏組</h4>
+                            <p class="price"><span>$<b>788</b></span></p>
+                    	</a>
+                    </li>
+                    <li>
+                        <a href="web.html" target="_top">
+                        	<span class="lab"><strong>3</strong></span>
+                            <img src="images/thumbnail-3.jpg" />
+                            <h4>台北依戀愛旅25坪大空間尊貴房雙人住宿券2張</h4>
+                            <p class="price"><span>$<b>6199</b></span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="web.html" target="_top">
+                        	<span class="lab"><strong>4</strong></span>
+                            <img src="images/thumbnail-4.jpg" />
+                            <h4>日本BORTHER藍色精靈縫紉機XL-2230-網型</h4>
+                            <p class="price"><span>$<b>9990</b></span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="web.html" target="_top">
+                        	<span class="lab"><strong>5</strong></span>
+                            <img src="images/thumbnail-5.jpg" />
+                            <h4>【倍舒柔】超質感抽取式衛生紙(150抽80包/箱)</h4>
+                            <p class="price"><span>$<b>1380</b></span></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </li>
+          <li id="tab2">
+          	<a href="tv.html">電視TOP 5</a>
+          <div id="accordionArea">
+            	<ul id="accordionTv" class="accordion">
+                	<li class="current deful">
+                    	<a href="tv.html" target="_top">
+                        	<span class="lab"><strong>1</strong></span>
+                        	<img src="images/thumbnail-7.jpg" />
+                        	<h4>義世經典托斯坎尼南北義十日(無自費)斯坎尼南北義十日</h4>
+                        	<p class="price"><span>$<b>6999</b></span></p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="tv.html" target="_top">
+                        	<span class="lab"><strong>2</strong></span>
+                        	<img src="images/thumbnail-8.jpg" />
+                            <h4>【Chloe’】香水女王經典女香75ml珍藏組</h4>
+                            <p class="price"><span>$<b>2458</b></span></p>
+                    	</a>
+                    </li>
+                    <li>
+                        <a href="tv.html" target="_top">
+                        	<span class="lab"><strong>3</strong></span>
+                            <img src="images/thumbnail-9.jpg" />
+                            <h4>台北依戀愛旅25坪大空間尊貴房雙人住宿券2張</h4>
+                            <p class="price"><span>$<b>3325</b></span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tv.html" target="_top">
+                        	<span class="lab"><strong>4</strong></span>
+                            <img src="images/thumbnail-10.jpg" />
+                            <h4>日本BORTHER藍色精靈縫紉機XL-2230-網型</h4>
+                            <p class="price"><span>$<b>9990</b></span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tv.html" target="_top">
+                        	<span class="lab"><strong>5</strong></span>
+                            <img src="images/thumbnail-6.jpg" />
+                            <h4>【倍舒柔】超質感抽取式衛生紙(150抽80包/箱)</h4>
+                            <p class="price"><span>$<b>250</b></span></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+      <div id="rankBtArea" class="clear">
+      <span class="bt-rankB"><a href="new.html"><img src="images/bt-rankB.png" width="87" height="32" /></a></span>
+          <span class="bt-rankA"><a href="coupon.html"><img src="images/bt-rankA.png" width="87" height="32" /></a></span>
+              </div>
+  </div>
+</div>
+
+</body>
+
+</html>

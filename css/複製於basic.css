@@ -1,0 +1,220 @@
+html{ font-size:62.5%;/*10 ÷ 16 × 100% = 62.5%*/ font: normal "新細明體",Arial,sans-serif;}
+body{ font-size:1.2rem; line-height:160%;}
+a { text-decoration: none; color: #000000; }
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+
+#layout-top{ background:url(../images/bkg-layout-top.gif) top repeat-x; height:148px;}
+
+.rankNumber{width:40px; height:33px; margin:10px 0 0 -30px; background:url(../images/bkg-ranknumber.png) top no-repeat; position:absolute; z-index:500; text-align:center; padding:7px 6px 0 0;}
+	.rankNumber p{ font-size:2.5rem; font-family:Arial; font-weight:bold; color:#fff; -moz-user-select: none;  /* for Firefox */ -webkit-user-select: none;  /* for Chrome */ cursor:default;}
+.arrowDown {
+    width:0px; height:0px; border:9px solid; border-color:#fff transparent transparent transparent;
+    border-style:solid dashed dashed dashed;
+	margin:0 auto;
+}
+
+#wrapper{ background:#ffedcc; width:940px; margin:0 auto;}
+#top{ background: #fff url(../images/bkg-top.jpg) 617px 13px no-repeat; position:relative; margin-top:15px;}
+
+.mainContent{ width:572px; padding:30px 15px 25px 30px; margin-top:35px; float:left; position:relative; background:url(../images/bkg-mainrank.jpg) top left repeat-x;}
+
+#top ul#channel{ width:330px; height:35px; position:absolute; top:0; z-index:5000; list-style:none; margin:0; padding:0;}
+		#top ul#channel li.tv-c{ 
+			width:150px; height:35px;
+			margin-right:5px;
+			position:absolute;
+			text-align:center;
+			background:linear-gradient(top,#c34f02,#f56d12); background:-moz-linear-gradient(top,#c34f02,#f56d12); background:-webkit-linear-gradient(top,#c34f02,#f56d12);
+			border-radius:8px 8px 0 0; webkit-border-radius:8px 0 0; -moz-border-radius:8px 0 0;
+		}
+		#top ul#channel li.tv-c:hover{ 
+			width:150px; height:45px;
+			position:absolute; top:-10px;
+		}	
+			#top ul#channel li.tv-c a{ 
+				width:147px; height:23px; display:block;
+				padding:11px 0 0 3px;
+				font-size:1.9rem; font-weight:bold; color:#fff;			
+			}
+				#top ul#channel li.tv-c .arrowDown{ 
+				 	display:none;
+				}
+			#top ul#channel li.tv-c:hover a{ 
+				width:147px; height:23px;				
+				padding:11px 0 0 3px;
+				font-size:1.9rem; font-weight:bold; text-align:center; color:#fff;
+				background:url(../images/bkg-channel.png) top repeat-x;
+			}
+			#top ul#channel li.tv-c:hover .arrowDown{ 
+				 	display:block;
+			}
+				
+		#top ul#channel li.web-c{ 
+			width:150px; height:35px;
+			position:absolute; left:155px;
+			text-align:center;
+			background:linear-gradient(top,#ae0b0b,#f91111); background:-moz-linear-gradient(top,#ae0b0b,#f91111); background:-webkit-linear-gradient(top,#ae0b0b,#f91111);
+			border-radius:8px 8px 0 0; webkit-border-radius:8px 0 0; -moz-border-radius:8px 0 0;			
+		}
+		#top ul#channel li.web-c:hover{ 
+			width:150px; height:45px;
+			position:absolute; left:155px; top:-10px;
+		}	
+			#top ul#channel li.web-c a{ 
+				width:147px; display:block;
+				padding:11px 0 0 3px;
+				font-size:1.9rem; font-weight:bold; color:#fff;			
+			}
+				#top ul#channel li.web-c .arrowDown{ 
+				 	display:none;
+				}
+			#top ul#channel li.web-c:hover a{ 
+				width:147px; height:23px;				
+				padding:11px 0 0 3px;
+				font-size:1.9rem; font-weight:bold; text-align:center; color:#fff;
+				background:url(../images/bkg-channel.png) top repeat-x;
+			}
+			#top ul#channel li.web-c:hover .arrowDown{ 
+				display:block;
+			}
+			
+			#top ul#channel li.current{
+				width:150px; height:45px;
+				position:absolute; top:-10px;
+			}
+				#top ul#channel li.current a{
+					width:147px; height:23px;
+					padding:11px 0 0 3px;
+					font-size:1.9rem; font-weight:bold; text-align:center; color:#fff;
+					background:url(../images/bkg-channel.png) top repeat-x;					
+				}
+				#top ul#channel li.current .arrowDown{ 
+					display:block;
+				}
+				
+	#rankIcon{ width:245px; height:225px; position:absolute; z-index:500; background:url(../images/icon-webrank.png) top no-repeat; margin-top:-76px; left:365px;}
+	#rankIcon-tv{ width:245px; height:225px; position:absolute; z-index:500; background:url(../images/icon-webrank-tv.png) top no-repeat; margin-top:-76px; left:365px;}
+	.mainContent a{ width:572px; position:relative; display:block;}
+		.mainContent img{ margin-right:15px; border:10px solid #FFFFFF; float:left; }
+		.mainContent .prdName{ 
+			width:227px; overflow:hidden; float:left; 
+			font-size:2.2rem; line-height:100%;
+			border-top:5px solid #ff9600; border-bottom:5px solid #ff9600; 
+			margin-top:145px;
+			padding:5px 0; 
+		}
+		.mainContent ul{ float:left; list-style:disc; width:210px; overflow:hidden; margin:6px 0 0 0; padding-left:17px; color:#bd6e07;}
+			.mainContent ul li{ line-height:120%; list-style:disc;}
+		.mainContent .prdPrice{ 
+			width:207px; height:34px; overflow:hidden;  
+			font-size:3rem; color:#fff; text-align:center; font-family:Arial;
+			position:absolute; top:267px; left:330px; z-index:50;
+			background:url(../images/bkg-mainprice.jpg) top repeat-x;
+			padding-top:19px;
+			display:block; 			
+		}
+			.mainContent .prdPrice b{ font-size:5.3rem; font-family:Arial; font-weight:bold; }
+			img.prdPriceArrow{ position:absolute; top:267px; left:537px;  border:0;}
+		
+.otherList{ 
+	background:#ffedcc;
+	width:265px;
+	padding:10px 15px 10px 15px;
+	float:right;
+	margin-top: 14px;
+	background:url(../images/bkg-mainrank.jpg) top left repeat-x;
+}
+.otherList ul{ width:265px;}
+.otherList ul li{ width:235px; padding:8px 5px 8px 25px; margin-bottom:10px; position:relative; background:url(../images/bkg-ranklist.gif) top left repeat-y;}
+.otherList ul li:last-child{ margin-bottom:0;}
+	.otherList ul li a{ width:235px; font-size:1.3rem; display:block;}
+		.otherList ul li a img{ float:left; margin-right:10px; border:1px solid #f1cd89; }
+		.otherList ul li a .prdName{ width:153px; float:left; overflow:hidden; line-height:120%; height:50px;}
+		.otherList ul li a .prdPrice{ width:153px; float:left; color:#c90e12; overflow:hidden;}
+			.otherList ul li a .prdPrice b{ font-size:2.5rem; font-family:Arial; font-weight:bold; }
+			
+		.otherList ul li:hover a img{ border:1px solid #c90e12; }
+
+#naviStore{ 
+	background:#ff9600; 
+	position:relative; 
+	padding:10px;
+	webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;
+	height:125px;
+}
+	#naviStore ul li{ float:left; background:#ffc26c; width:99px; padding:5px 8px 0 8px; height:35px;}
+		/*--H4--*/
+		#naviStore ul li h4 { 
+			font-size:1.5rem;
+			text-align:center; line-height:35px; 
+			cursor:pointer; 
+			margin:0; padding:0; 
+		}
+
+			#naviStore ul li:hover h4 { 
+				 webkit-border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0;
+				 background:#ff9600;
+				 color:#fff;
+				 z-index:10000;	
+			}
+			#naviStore ul li:first-child{ webkit-border-radius:5px 0 0 5px; -moz-border-radius:5px 0 0 5px; border-radius:5px 0 0 5px;}
+			#naviStore ul li:last-child{ webkit-border-radius:0 5px 5px 0; -moz-border-radius:0 5px 5px 0; border-radius:0 5px 5px 0;}
+		/*--Content--*/
+		#naviStore ul li .cnt{ 
+			position:absolute; left:10px;
+			z-index:100;
+			width:920px;
+			height:90px;
+			padding-top:10px;
+		}
+		#naviStore ul li .cnt ul li{ 
+			background:#ff9600; 
+			/*background:#666666; */
+			webkit-border-radius:; -moz-border-radius:none; border-radius:none; 
+			float:left;
+			padding:0;
+			position:relative;
+		}		
+		#naviStore ul li:hover .cnt{ display:block; z-index:50000;}
+		
+		#naviStore ul li .cnt ul li{ width:163px; border-right:1px dotted #a76200; padding:0 10px 0 5px; height:72px; margin-left:5px;}
+			#naviStore ul li .cnt ul li:first-child{ margin:0;}
+			#naviStore ul li .cnt ul li:last-child{ width:163px; border:none;}
+		#naviStore ul li .cnt ul li a{ font-size:1.2rem; display:block; width:163px; height:72px;}
+			#naviStore ul li .cnt ul li:last-child a{ }
+				#naviStore ul li .cnt ul li a img{ border:1px solid #d1d1d1; float:left; margin-right:5px;}
+				#naviStore ul li .cnt ul li a .prdName{ display:block; height:40px; width:86px; overflow:hidden; float:left; line-height:120%; margin-bottom:10px;}
+				#naviStore ul li .cnt ul li a .prdPrice{ display:block; color:#fff; width:86px; float:left; overflow:hidden; line-height:23px; }
+					#naviStore ul li .cnt ul li a .prdPrice b{ font-size:2rem; font-family:Arial; font-weight:bold; }
+		#naviStore ul li .cnt ul li:hover a .prdName{}
+		#naviStore ul li .cnt ul li:hover a img{ border:1px solid #c90e12; }
+		
+		
+		
+
+#bottom{ position:relative; padding:15px 0;}
+.categoryContainer{ margin:0 auto; position:relative; width:908px;}
+
+	#bottom ul{ width:298px; float:left; margin-right:7px; }
+		#bottom ul li{ padding:0 5px 0 5px; width:288px; position:relative; }
+		#bottom ul li:last-child{ padding:0 5px 5px 5px; width:288px; }
+		#bottom ul li:last-child:hover a{ background:#f2f2f2;}
+		#bottom ul#av li.tit{ background:url(../images/tit-alsolike.jpg) no-repeat top; width:298px; height:50px; padding:0;}
+		#bottom ul#mp li.tit{ background:url(../images/tit-mp.jpg) no-repeat top; width:298px; height:50px; padding:0;}
+		#bottom ul#hn li.tit{ background:url(../images/tit-hn.jpg) no-repeat top; width:298px; height:50px; padding:0;}
+			#bottom ul li a{ font-size:1.5rem; background:#ffffff url(../images/separation-bottomlist.jpg) bottom no-repeat; display:block; width:268px; height:75px; padding:10px 10px 15px 10px;}
+			#bottom ul li:hover a{ background:#f2f2f2;}
+			#bottom ul li:last-child a{ background:#ffffff none; display:block; width:268px; height:70px; padding:10px;}
+				#bottom ul li a img{ border:1px solid #d1d1d1; float:left; margin-right:10px;}
+				#bottom ul li a .prdName{ display:block; height:40px; width:184px; overflow:hidden; float:left; margin-bottom:5px;}
+				#bottom ul li a .prdPrice{ display:block; color:#c90e12; background:url(../images/icon-arrow.png) no-repeat left center; width:149px; float:left; overflow:hidden; line-height:23px; padding-left:15px; }
+					#bottom ul li a .prdPrice b{ font-size:2.5rem; font-family:Arial; font-weight:bold; }
+		#bottom ul li:hover a .prdName{}
+		#bottom ul li:hover a img{ border:1px solid #c90e12; }
+	
+		ul#av li{ background:#d8b31e;}
+		ul#mp li{ background:#e06114;}
+		ul#hn{ margin:0;}
+		ul#hn li{ background:#d98d20;}
